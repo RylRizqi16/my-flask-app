@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Web App di Azure</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang di Web App Python Azure</h1>
+        {% if name %}
+        <p>Halo, {{ name }}!</p>
+        {% else %}
+        <p>Ini adalah aplikasi web Python sederhana yang berjalan di Azure.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
